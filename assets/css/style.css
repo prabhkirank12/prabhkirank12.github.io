@@ -316,6 +316,11 @@ html, body {
 
 .img-lines {
     margin: 15px 0 40px;
+    color: #EE6F93;
+}
+
+img .img-lines {
+     color: #EE6F93;
 }
 
 .site-section p {
@@ -597,6 +602,11 @@ html, body {
     margin-top: 40px;
 }
 
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* FOOTER
 ================================================== */
 .site-footer {
@@ -606,6 +616,7 @@ html, body {
     width: 100%;
     background-color: black;
     z-index: -1;
+    justify-content: space-between;
 }
 
 .icon {
