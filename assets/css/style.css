@@ -278,17 +278,18 @@ html, body {
 }
 
 .about-info {
-   word-wrap: break-word;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
 }
 
-.name-p-tag {
-    border: 2px solid black;
-    width: 800px;
-    margin: none;
+.col-md-offset-3 {
+    margin-left: 0;
 }
 
-.about-p-tag {
-    width: 800px;
+.col-md-6 {
+    width: 100%;
 }
 
 /* SITEMAIN
