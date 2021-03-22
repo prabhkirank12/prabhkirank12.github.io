@@ -1,3 +1,4 @@
+
 $(function() {
 
     $('.navbar-toggle').click(function() {
@@ -25,23 +26,16 @@ $(function() {
         offset: 10
     });
 
-	/* Progress bar */
-    var $section = $('.section-skills');
-    function loadDaBars() {
-	    $('.progress .progress-bar').progressbar({
-	        transition_delay: 500
-	    });
-    }
     
-    $(document).bind('scroll', function(ev) {
-        var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section.offset().top - window.innerHeight;
-        if (scrollOffset > containerOffset) {
-            loadDaBars();
-            // unbind event not to load scrolsl again
-            $(document).unbind('scroll');
-        }
-    });
+    // $(document).bind('scroll', function(ev) {
+    //     var scrollOffset = $(document).scrollTop();
+    //     var containerOffset = $section.offset().top - window.innerHeight;
+    //     if (scrollOffset > containerOffset) {
+    //         loadDaBars();
+    //         // unbind event not to load scrolsl again
+    //         $(document).unbind('scroll');
+    //     }
+    // });
 
     /* Counters  */
     if ($(".section-counters .start").length>0) {
@@ -85,15 +79,12 @@ $(function() {
                 return false;
             }
     });
-    
-    if ($('.text-slider').length == 1) {
-        var typed_strings = $('.text-slider-items').text();
-        var typed = new Typed('.text-slider', {
-            strings: typed_strings.split(','),
-            typeSpeed: 80,
-            loop: true,
-            backDelay: 1100,
-            backSpeed: 30
-        });
-    }
+
+    // Typed
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true
+    })
 });
