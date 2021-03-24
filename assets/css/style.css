@@ -206,7 +206,7 @@ html, body {
 .nav > li > a:hover,
 .nav > li.active > a {
     background-color: transparent;
-    border-bottom: 2px solid #bd15af;
+    border-bottom: 2px solid #EE6F93;
 }
 
 .nav > li > a:focus {
@@ -260,17 +260,17 @@ html, body {
 } 
 
 .hero img {
-    height: 600px;
+    height: 700px;
 }
 
 #typed {
     font-size: 25px;
-    color: #bd15af;
+    color: #EE6F93;
 }
 
 .typed-cursor {
     font-size: 25px;
-    color: #bd15af;
+    color: #EE6F93;
 }
 
 #about {
@@ -374,7 +374,7 @@ html, body {
 }
 .section-services {
     position: relative;
-    padding-top: 220px;
+    padding-top: 100px;
 }
 
 .section-services:before {
@@ -553,6 +553,10 @@ html, body {
 .icons {
     color: purple;
 }
+
+/* .kiki-img {
+    height: 500px;
+} */
 /* Section: Counters */
 .section-counters {
     background: url(../img/unsplash.jpg) no-repeat fixed center / cover;
