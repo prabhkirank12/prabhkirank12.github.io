@@ -262,19 +262,20 @@
 
                 <h3>Contact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required>   
-                        </div>
-                        <div class="col-sm-12">
-                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message" required></textarea>
-                        </div>
-                    </div>
-                    <button href="#" class="btn btn-border" type="submit">Hire Me <span class="glyphicon glyphicon-send"></span></button>
+                <!-- modify this form HTML and place wherever you want your form -->
+                
+                <form action="https://formspree.io/f/mgerwqoo" method="POST">
+                  <label>
+                    <input type="text" placeholder="Name" name="name" required>
+                  </label>
+                  <label>
+                    <input type="email" name="_replyto" placeholder="Email" required>
+                  </label>
+                  <label>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                  </label>
+                  <!-- your other form fields go here -->
+                  <button href="#" type="submit">Send</button>
                 </form>
             </div>
         </section><!-- /.section-form -->
